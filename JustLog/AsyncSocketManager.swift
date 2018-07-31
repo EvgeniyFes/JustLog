@@ -51,7 +51,7 @@ class AsyncSocketManager: NSObject {
                 print("🔌 <AsyncSocket>, Could not startTLS: \(error.localizedDescription)")
             }
         }
-        self.socket.startTLS([String(kCFStreamSSLPeerName): NSString(string: host)])
+        self.socket.startTLS([String(kCFStreamSSLPeerName): NSString(string: host), String(GCDAsyncSocketManuallyEvaluateTrust): NSString(string: "YES")])
     }
     
     func write(_ data: Data, withTimeout timeout: TimeInterval, tag: Int) {
@@ -141,5 +141,9 @@ extension AsyncSocketManager: GCDAsyncSocketDelegate {
             }
         }
         self.delegate?.socket(sock, didDisconnectWithError: err)
+    }
+
+    func socket(_ sock: GCDAsyncSocket, didReceive trust: SecTrust, completionHandler: @escaping (Bool) -> Void) {
+        completionHandler(true)
     }
 }
