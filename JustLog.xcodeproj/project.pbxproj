@@ -29,7 +29,6 @@
 		9F741DF1205FDB1900677103 /* JustLog-prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 9F741DEC205FDB1900677103 /* JustLog-prefix.pch */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F741DF2205FDB1900677103 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F741DED205FDB1900677103 /* Info.plist */; };
 		9F741DF5205FDF8100677103 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F741DF7205FDF8100677103 /* CocoaAsyncSocket.framework */; };
-		9F741DF6205FDF8100677103 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F741DF8205FDF8100677103 /* SwiftyBeaver.framework */; };
 		9F741DF9205FDF8A00677103 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F741DFB205FDF8A00677103 /* Nimble.framework */; };
 		9F741DFA205FDF8A00677103 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F741DFC205FDF8A00677103 /* Quick.framework */; };
 /* End PBXBuildFile section */
@@ -81,7 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F741DF5205FDF8100677103 /* CocoaAsyncSocket.framework in Frameworks */,
-				9F741DF6205FDF8100677103 /* SwiftyBeaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
